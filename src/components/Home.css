@@ -1,0 +1,12 @@
+.left-container{
+    flex: 1;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.right-container{
+    flex: 1;
+    height: 100vh;
+    background-color: white;
+}
+

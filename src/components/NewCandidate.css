@@ -1,0 +1,84 @@
+/* Candidate Form Container */
+
+.container{
+    padding: 1rem;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.title{
+    text-align: center;
+    color: navy;
+    font-size: 24px;
+}
+.candidate-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Form Header */
+.candidate-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form Fields */
+.candidate-form input[type="text"],
+.candidate-form input[type="email"],
+.candidate-form input[type="checkbox"],
+.candidate-form input[type="month"],
+.candidate-form select,
+.candidate-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Multiple Select */
+.candidate-form select[multiple] {
+    height: auto;
+}
+
+/* Add Entry Button */
+.candidate-form button[type="button"] {
+    width: auto;
+    padding: 8px 16px;
+    margin-top: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.candidate-form button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Submit Button */
+.candidate-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.candidate-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
