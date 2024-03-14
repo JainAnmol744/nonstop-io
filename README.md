@@ -15,7 +15,6 @@ Welcome to the React Candidate Management App! This application allows users to 
 
 ### `Clone the repository to your local machine:`
 
-Clone the repository to your local machine: 
 git clone <https://github.com/JainAnmol744/nonstop-io.git>
 
 
