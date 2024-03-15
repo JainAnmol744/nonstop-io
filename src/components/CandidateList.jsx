@@ -14,7 +14,6 @@ const CandidateList = ({list}) => {
         navigate(`candidate/${details.id}`, { state: { details } });
     };
 
-    console.log(list)
 
 
     return (

@@ -17,7 +17,6 @@ import { useNavigate } from "react-router-dom";
 
 import axios from "axios";
 
-
 const Login = () => {
   const [provider, setProvider] = useState('');
   const navigate = useNavigate()
@@ -39,10 +38,11 @@ const Login = () => {
 
 
             <LoginSocialFacebook
-              appId={'997032845087105' || ''}
+              appId={'7472866436069747' || ''}
               onResolve={({ provider, data }) => {
                 setProvider(provider);
-                console.log(data,"faccccc");
+                localStorage.setItem('user', JSON.stringify(data));
+                navigate('home')
               }}
               onReject={(err) => {
                 console.log(err);
@@ -55,7 +55,7 @@ const Login = () => {
         client_id="237632193869-u21ji3c174d0t73kbnvasc17qjt66gni.apps.googleusercontent.com"
         onResolve={({provider, data})=>{
           setProvider(provider);
-          console.log(data, "Success google")
+          localStorage.setItem('user', JSON.stringify(data));
           navigate('home')
         }}
         onReject={(err)=>{
